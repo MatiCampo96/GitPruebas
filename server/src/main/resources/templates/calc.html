@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <form method="get" action="http://localhost:8082/calcular">
+        <table>
+            <tr>
+                <td>Número 1:</td>
+                <td><input type="text" name="numero1" value="0" /></td>
+            </tr>
+            <tr>
+                <td>Número 2:</td>
+                <td><input type="text" name="numero2" value="0" /></td>
+            </tr>
+            <tr>
+                <td>Operación: </td>
+                <td>
+                     sumar      <input type="radio" name="operacion" value="sumar">
+                     restar     <input type="radio" name="operacion" value="restar">
+                     dividir    <input type="radio" name="operacion" value="dividir">
+                     multiplicar<input type="radio" name="operacion" value="multiplicar">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Calcular"/></td>
+                <td><input type="reset" value="Borrar"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
